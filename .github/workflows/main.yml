@@ -33,3 +33,9 @@ jobs:
           # The root LaTeX file to be compiled
           root_file: hilfszettel.tex
           # The working directory for the latex compiler to be invoked
+          
+      - name: Archive PDF
+        uses: actions/upload-artifact@v2
+        with:
+          name: Hilfszettel-PDF
+          path: hilfszettel.pdf
