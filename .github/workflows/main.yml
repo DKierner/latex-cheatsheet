@@ -31,7 +31,7 @@ jobs:
         uses: dante-ev/latex-action@master
         with:
           # The root LaTeX file to be compiled
-          root_file: hilfszettel.tex
+          root_file: Hilfszettel.tex
           args: -pdflatex=lualatex -pdf -latexoption=-file-line-error -latexoption=-interaction=nonstopmode
           # The working directory for the latex compiler to be invoked
 
@@ -39,4 +39,4 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: Hilfszettel
-          path: hilfszettel.pdf
+          path: Hilfszettel.pdf
