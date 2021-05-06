@@ -32,7 +32,7 @@ jobs:
         with:
           # The root LaTeX file to be compiled
           root_file: Hilfszettel.tex
-          args: -pdflatex=lualatex -pdf -latexoption=-file-line-error -latexoption=-interaction=nonstopmode
+          args: -lualatex -pdf -latexoption=-file-line-error -latexoption=-interaction=nonstopmode
           # The working directory for the latex compiler to be invoked
 
       - name: Archive PDF
